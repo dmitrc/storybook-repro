@@ -21,5 +21,5 @@ export async function ServerComponentWithManyAwaits() {
 }
 
 export function getMockData(i: number): Promise<string> {
-  return new Promise((resolve) => setTimeout(() => resolve(`mock data ${i}`), 1000));
+  return new Promise((resolve) => setTimeout(() => resolve(`mock data ${i}`), 50));
 }
